@@ -19,6 +19,25 @@ pow--;
 }
 return accumulator;
 }
+//Définition d'une fonction de permutation de deux entiers.
+void permutation(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+#define ARRAY_SIZE 5
+void displayTable(){
+    int array[ ARRAY_SIZE ];
+array[0] = 1;
+array[1] = 2;
+array[2] = 4;
+array[3] = 8;
+array[4] = 16;
+int i;
+for(i=0; i<ARRAY_SIZE; i++ ) {
+printf( "array[%d] == %d\n", i, array[i] );
+}
+}
 // Exercice7: Résolution de l'équation du second degré dans R
 void resoudreEquation(double a, double b, double c){
     if(a==0){

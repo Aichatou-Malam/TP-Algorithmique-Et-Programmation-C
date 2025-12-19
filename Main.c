@@ -6,7 +6,7 @@ int main( void ) {
     
     do {
         printf("\n---MENU PRINCIPAL---\n");
-        printf("1. Tester power() et fact()\n");
+        printf("1. Tester power(), fact(), permutation() et displayTable()\n");
         printf("2. Exercice 7: Equation du second degre\n");
         printf("3. Exercice 12.a: Nombre premier\n");
         printf("4. Exercice 13: Distance entre deux points\n");
@@ -20,6 +20,13 @@ int main( void ) {
               printf( "2³ == %d\n", result );
               result = fact( 6 );
               printf( "6! == %d\n", result );
+
+              int x = 5, y = 10;
+             printf("Avant permutation: x = %d\n, y = %d\n", x, y);
+             permutation(&x, &y);
+             printf("Après permutation : x = %d\n, y = %d\n", x, y);
+
+             displayTable();
                 break;
             }
                         case 2: {
