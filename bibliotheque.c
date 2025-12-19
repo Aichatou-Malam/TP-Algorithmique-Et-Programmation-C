@@ -1,4 +1,4 @@
-#include "SampleLib.h"
+#include "bibliotheque.h"
 #include<math.h>
 // Définition d'une fonction de calcul de factorielle.
 unsigned int fact( unsigned int value ) {
